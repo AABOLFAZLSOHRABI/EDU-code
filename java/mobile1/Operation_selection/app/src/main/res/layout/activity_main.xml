@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="انتخاب عملیات ریاضی"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="#333333"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etMinNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:hint="حداقل عدد"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/etMaxNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="حداکثر عدد"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="جمع"
+        android:drawableStart="@android:drawable/ic_input_add"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/btnSubtraction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="تفریق"
+        android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/btnMultiplication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ضرب"
+        android:drawableStart="@android:drawable/ic_menu_rotate"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تقسیم"
+        android:drawableStart="@android:drawable/ic_menu_share"
+        android:backgroundTint="#9C27B0"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"/>
+
+</LinearLayout>
