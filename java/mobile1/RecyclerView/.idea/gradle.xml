@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<<< HEAD:java/mobile1/RecyclerView/.idea/gradle.xml
   <component name="GradleMigrationSettings" migrationVersion="1" />
+========
+>>>>>>>> 06b89a7a1f4ed5b2ad9948bf987311664b6667e1:java/mobile1/Operation_selection/.idea/gradle.xml
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>

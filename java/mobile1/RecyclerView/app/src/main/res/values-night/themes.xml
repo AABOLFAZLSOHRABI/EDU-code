@@ -1,6 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<<< HEAD:java/mobile1/RecyclerView/app/src/main/res/values-night/themes.xml
     <style name="Base.Theme.RecyclerView" parent="Theme.Material3.DayNight.NoActionBar">
+========
+    <style name="Base.Theme.Operationselection" parent="Theme.Material3.DayNight.NoActionBar">
+>>>>>>>> 06b89a7a1f4ed5b2ad9948bf987311664b6667e1:java/mobile1/Operation_selection/app/src/main/res/values-night/themes.xml
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
