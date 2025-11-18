@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity">
+
+    <ImageView
+        android:id="@+id/albumArt"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Song Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albumArt" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songTitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar">
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar">
+
+        <ImageButton
+            android:id="@+id/back10Button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back 10 seconds"
+            android:src="@android:drawable/ic_media_rew" />
+
+        <ImageButton
+            android:id="@+id/prevButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="32dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Previous song"
+            android:src="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/playPauseButton"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Play/Pause"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="32dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Next song"
+            android:src="@android:drawable/ic_media_next" />
+
+        <ImageButton
+            android:id="@+id/forward10Button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Forward 10 seconds"
+            android:src="@android:drawable/ic_media_ff" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
