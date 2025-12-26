@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_alert_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show AlertDialog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_progress_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show ProgressDialog"
+        app:layout_constraintTop_toBottomOf="@id/btn_alert_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_date_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show DatePickerDialog"
+        app:layout_constraintTop_toBottomOf="@id/btn_progress_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_time_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show TimePickerDialog"
+        app:layout_constraintTop_toBottomOf="@id/btn_date_picker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_snackbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show Snackbar"
+        app:layout_constraintTop_toBottomOf="@id/btn_time_picker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_custom_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show Custom Dialog"
+        app:layout_constraintTop_toBottomOf="@id/btn_snackbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
